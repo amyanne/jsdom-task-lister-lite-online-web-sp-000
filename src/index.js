@@ -10,5 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Set my li's text content to my newTaskInput value and give it an extra space for buffer
   li.textContent = newTaskInput.value + " "
   }
+  const form = document.querySelector("form")
+  form.addEventListener("submit", addNewTask)
 
 });
